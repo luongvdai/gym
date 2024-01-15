@@ -1,0 +1,41 @@
+export const SIGNUP_ACTION = "[actions] signup user";
+export const LOGIN_ACTION = "[actions] login user";
+export const LOGIN_WITH_GOOGLE_ACTION = "[actions] login user with google";
+export const LOGIN_WITH_FACEBOOK_ACTION = "[actions] login user with facebook";
+export const LOGOUT_ACTION = "[actions] logout user";
+export const AUTH_ACTION = "[actions] Do User Auth";
+export const AUTO_LOGIN_ACTION = "[actions] Auth auto login";
+export const AUTO_LOGOUT_ACTION = "[actions] Auth auto logout";
+export const SET_USER_TOKEN_DATA_MUTATION = "[mutations] set user token";
+export const LOADING_SPINNER_SHOW_MUTATION = "[mutations] show loading spinner";
+export const TOAST_SHOW_MUTATION = "[mutations] show toast notification";
+export const SET_AUTO_LOGOUT_MUTATION = "[mutations] set auto logout";
+export const SET_EXPIRATION_TIME_ACTION = "[actions] set expiration time login";
+export const GET_USER_TOKEN_GETTER = "[getter] auth user token";
+export const IS_AUTHENTICATE_GETTER = "[getter] is user authenticated";
+export const DECODE_TOKEN = "[actions] decode accessToken";
+export const SET_BRANCH_SELECTED = "[mutations] set branch selected";
+export const GET_BRANCH_SELECTED = "[getter] get branch selected";
+export const DISPLAY_TOAST_ACTION = "[actions] display toast";
+export const GET_BRANCH_HOME_SELECTED = "[getter] get branch homepage selected";
+export const SET_BRANCH_HOME_SELECTED =
+  "[mutations] set branch homepage selected";
+export const SET_ORDERSTATUS = "[mutations] set order status done";
+export const GET_ORDERSTATUS = "[mutations] set order status done";
+export const SET_CHAT_ISOPENED = "[mutations] set status chat popup";
+export const GET_CHAT_ISOPENED = "[getter] get status chat popup";
+export const AUTO_NOTIFICATION_USER_ACTION =
+  "[actions] auto set notification user";
+export const GET_NOTIFICATION = "[getter] get all notification";
+export const SET_NOTIFICATION_RECEIVED =
+  "[mutations] set received notification message";
+export const SET_STOMP_DISCONNECT = "[mutations] set stomp disconnect";
+export const SET_NOTIFICATION_STATUS = "[mutations] set notification status";
+export const SET_NOTIFICATION_LOAD = "[mutations] set load all notification";
+export const IS_TOKEN_ACTIVE = "[actions] check token still active";
+export const SEND_NOTIFICATION_MUTATION = "[mutations] send notification";
+export const OTP_VERIFY_SHOW_MUTATION = "[mutations] show otp popup signin";
+export const OTP_IS_VERIFY_GETTER = "[getters] is user verify";
+export const BRANCH_VERIFY_SHOW_MUTATION = "[mutations] show branch popup";
+export const BRANCH_IS_VERIFY_GETTER = "[getters] is user branch verify";
+export const BRANCH_CHECK_ACTION = "[actions] check user is has branch"

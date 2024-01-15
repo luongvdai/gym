@@ -1,0 +1,5 @@
+package fpt.gymmanagement.controller;
+
+public class CommonTest {
+    public static final String TOKEN_ADMIN = "eyJhbGciOiJIUzI1NiJ9.eyJicmFuY2hJZCI6Ik5PVF9ZRVQiLCJyb2xlIjoiQURNSU4iLCJ0eXBlIjoiTk9STUFMIiwiZW1haWwiOiJhZG1pbkhhaUBnbWFpbC5jb20iLCJpc1ZlcmlmeSI6InRydWUiLCJ1c2VybmFtZSI6ImFkbWluSGFpIiwic3ViIjoiYWRtaW5IYWkiLCJpYXQiOjE3MDM1MzgxMTEsImV4cCI6MTcwMzYyNDUxMX0.avyebyqG8AzRseh2zFtffYsIDb_18nXR8ljrNEG1l1U";
+}

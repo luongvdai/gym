@@ -1,0 +1,126 @@
+server:
+  port: 5000
+  error:
+    include-message: always
+    include-stacktrace: never
+
+logging:
+  level:
+    org.springframework.mail: off
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+          facebook:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345
+#    url: jdbc:mysql://35.229.151.241:3306/gym_management?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/gym_management?createDatabaseIfNotExist=true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  websocket:
+    stomp:
+      prefix: /app  # Cấu hình prefix cho các endpoint WebSocket
+      allowed-origins: "*
+      "  # Cấu hình địa chỉ origin cho WebSocket (chấp nhận tất cả origins)
+    servlet:
+      mapping: /websocket/*  # Đường dẫn mà WebSocket endpoint sẽ lắng nghe
+
+redis:
+  host: redis-gymmanagementsystem.redis.cache.windows.net
+  port: 6379
+
+
+
+
+
+
+
+
+
+
+
+
+
+#server:
+#  port: 5000
+#  error:
+#    include-message: always
+#    include-stacktrace: never
+#spring:
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: phungduchai2001@gmail.com
+#    password: ggzoqnqnswkiygum
+#    protocol: smtp
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable:true
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          google:
+#            client-id: 115418179157-1p3muuctjp3h94g5309u0arc7h6tf792.apps.googleusercontent.com
+#            client-secret: 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
+#            scope: https://www.googleapis.com/auth/userinfo.email
+#          facebook:
+#            client-id: 3463208490557333
+#            client-secret: 9f1807dc349765532b7ec025553ca590
+#            scope:
+#              - email
+#              - public_profile
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: 123456
+##    url: jdbc:mysql://35.229.151.241:3306/gym_management?createDatabaseIfNotExist=true
+#    url: jdbc:mysql://localhost:3306/gym_management?createDatabaseIfNotExist=true
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#
+#
+#        websocket:
+#          stomp:
+#            prefix: /app  # Cấu hình prefix cho các endpoint WebSocket
+#            allowed-origins: "*"  # Cấu hình địa chỉ origin cho WebSocket (chấp nhận tất cả origins)
+#          servlet:
+#            mapping: /websocket/*  # Đường dẫn mà WebSocket endpoint sẽ lắng nghe
+#
+#redis:
+#  host: localhost
+#  port: 6379
+#

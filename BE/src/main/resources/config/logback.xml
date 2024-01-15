@@ -1,0 +1,27 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<configuration>-->
+
+<!--    <property name="filename" value="api-gym-management"/>-->
+
+<!--    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder>-->
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level - [%t] %c{1}:%L - %m%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+<!--    <appender name="daily-file" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>logs/${filename}.log</file>-->
+<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+<!--            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level - [%t] %c{1}:%L - %m%n</Pattern>-->
+<!--        </encoder>-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>logs/daily-%d{yyyy-MM}/${filename}-%d{yyyy-MM-dd}.log</fileNamePattern>-->
+<!--        </rollingPolicy>-->
+<!--    </appender>-->
+
+<!--    <logger name="fpt.gym-management" level="trace" additivity="false">-->
+<!--        <appender-ref ref="daily-file" />-->
+<!--    </logger>-->
+<!--    <root level="info" additivity="false">-->
+<!--        <appender-ref ref="daily-file" />-->
+<!--    </root>-->
+<!--</configuration>-->
